@@ -6,8 +6,8 @@ public class DieBoxScript : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		if (col.gameObject.name == "Box" )
-        { 
-			Destroy(col.gameObject);
-		}	
+        {
+            col.gameObject.SetActive(false);
+        }	
 	}
 }

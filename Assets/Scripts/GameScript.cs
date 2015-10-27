@@ -55,6 +55,7 @@ public class GameScript : MonoBehaviour {
 
     public void StopCreateBox()
     {
+        createBoxScript.InitBoxList();
         createBoxScript.StopCoroutine("CreateBox");
     }
 
